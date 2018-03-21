@@ -1,0 +1,7 @@
+migrations
+__pycache__
+.git
+.gitignore
+.python-version
+dist
+*.egg-info

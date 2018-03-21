@@ -1,0 +1,10 @@
+__pycache__
+*.pyc
+*.egg-info/
+.python-version
+migrations/
+dist/
+*.tar.gz
+web_config.py
+web_config_dev.py
+
