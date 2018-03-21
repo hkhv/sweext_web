@@ -14,7 +14,6 @@ RUN pip3 install sweext.tar.gz \
     && mkdir -p /var/log/supervisor \
        /opt/supervisor \
        /root/sweext_web/sweext_web/logger/debug_logs /root/sweext_web/sweext_web/logger/error_logs \
-
     && touch /opt/supervisor/sweext_web.log \
     && rm sweext.tar.gz
 
