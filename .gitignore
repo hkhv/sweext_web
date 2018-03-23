@@ -7,4 +7,5 @@ dist/
 *.tar.gz
 web_config.py
 web_config_dev.py
-
+error_logs/
+debug_logs/
