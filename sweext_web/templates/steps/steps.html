@@ -8,9 +8,20 @@
 {% endblock %}
 
 {% block content %}
+
 <script id="steps-area-tpl" type="text/html">
+    <div class="token">
+        <button class="layui-btn layui-btn-radius layui-btn-danger layui-btn-lg claim">提取 EXT（Claim EXT）</button>
+    </div>
+
     <div class="invite">
-        <div class="invite-desc"><% d.step1_desc %></div>
+        <div class="invite-desc">
+            <%# if (!d.is_ended) { %>
+                <% d.step1_desc %>
+            <%# } else { %>
+                <% d.ended_step1_desc %>
+            <%# } %>
+        </div>
         <div class="invite-container">
             <div id="invite-text-code" class="invite-text">
 
@@ -26,7 +37,15 @@
     </div>
     
     <div class="invite">
-        <div class="invite-desc"><% d.step2_desc %></div>
+        <div class="invite-desc">
+
+            <%# if (!d.is_ended) { %>
+                <% d.step2_desc %>
+            <%# } else { %>
+                <% d.ended_step2_desc %>
+            <%# } %>
+        </div>
+
         <div class="invite-container">
             <div id="invite-text-link" class="invite-text">
     
@@ -46,15 +65,11 @@
             <div class="result-invited-text"><% d.result1_desc %></div>
             <div class="result-invited-number"><% d.invited_count %></div>
         </div>
-    
+ 
         <div class="result-ext">
             <div class="result-ext-text"><% d.result2_desc %></div>
             <div class="result-ext-number"><% d.earned %></div>
         </div>
-    </div>
-
-    <div class="get-token">
-        <button class="layui-btn layui-btn-normal layui-btn-sm layui-btn-disabled"><% d.extract_token_tip %></button>
     </div>
 </script>
 

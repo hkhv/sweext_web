@@ -1,0 +1,152 @@
+------------------------- ERROR -------------------------
+Time:      2018-02-28 02:39:23
+Thread:    MainThread
+File:      logger.py(line 18)
+Message:
+test/test
+Traceback (most recent call last):
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/mnt/host/Projects/items/nesc/nesc_admin/nesc_admin/views/view_core.py", line 10, in dispatch_request
+    return render_template(self._template_name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test/test
+------------------------- ERROR -------------------------
+Time:      2018-02-28 02:39:25
+Thread:    MainThread
+File:      logger.py(line 18)
+Message:
+test/test
+Traceback (most recent call last):
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/mnt/host/Projects/items/nesc/nesc_admin/nesc_admin/views/view_core.py", line 10, in dispatch_request
+    return render_template(self._template_name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test/test
+------------------------- ERROR -------------------------
+Time:      2018-02-28 02:39:37
+Thread:    MainThread
+File:      logger.py(line 18)
+Message:
+test/test
+Traceback (most recent call last):
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/mnt/host/Projects/items/nesc/nesc_admin/nesc_admin/views/view_core.py", line 10, in dispatch_request
+    return render_template(self._template_name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test/test
+------------------------- ERROR -------------------------
+Time:      2018-02-28 02:40:12
+Thread:    MainThread
+File:      logger.py(line 18)
+Message:
+test/test
+Traceback (most recent call last):
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/views.py", line 84, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "/mnt/host/Projects/items/nesc/nesc_admin/nesc_admin/views/view_core.py", line 10, in dispatch_request
+    return render_template(self._template_name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/jinja2/loaders.py", line 113, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 57, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/joit/.pyenv/versions/3.6.4/envs/env_test/lib/python3.6/site-packages/flask/templating.py", line 85, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: test/test

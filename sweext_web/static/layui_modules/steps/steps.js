@@ -5,6 +5,8 @@ layui.define(['base', 'laytpl', 'steps_http'], function(exports) {
     ,http = layui.steps_http
     ,base = layui.base
 
+    console.info(base.decodeBase64('bXlqb2l0QG91dGxvb2suY29t'))
+
     laytpl.config({
         open: '<%',
         close: '%>'
@@ -60,6 +62,10 @@ layui.define(['base', 'laytpl', 'steps_http'], function(exports) {
     document.getElementById('copy-invite-link').onclick = function() {
         base.copy('#copy-link')
     }
+
+    $('.claim').click(function() {
+        location.href = '/ext/claim'
+    })
     
     // } 
 

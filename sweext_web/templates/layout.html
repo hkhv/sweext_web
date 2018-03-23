@@ -44,7 +44,11 @@
                         </div>
     
                         <div class="digest">
-                            <% d.digest %>
+                            <%# if (!d.is_ended) { %>
+                                <% d.digest %>
+                            <%# } else { %>
+                                <% d.ended_digest %>
+                            <%# } %>
                         </div>
                     </script>
                 </div>
@@ -63,6 +67,7 @@
     <script src="{{ url_for('static', filename='plugin/layui/layui.js') }}"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     <script src="{{ url_for('static', filename='layui_modules/config.js') }}"></script>
+    <script src="{{ url_for('static', filename='plugin/base64/base64.min.js') }}"></script>
     <script>
         layui.use('layout')
     </script>

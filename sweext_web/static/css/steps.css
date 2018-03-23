@@ -124,3 +124,9 @@ input.copy-value-box {
 .get-token button {
     color: #909090;
 }
+
+.token {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bolder;
+}

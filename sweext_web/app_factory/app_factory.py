@@ -7,9 +7,10 @@ from flask_debugtoolbar import DebugToolbarExtension
 from sweext.models.models._base import db
 
 from ..exceptions.http_error import HttpError
-from ..views import home, steps
+from ..views import home, steps, claim
 from ..views.home.urls import HomeUrlRegister
 from ..views.steps.urls import StepsUrlRegister
+from ..views.claim.urls import ClaimUrlRegister
 
 
 def create_app(script_info=None):
@@ -24,9 +25,11 @@ def create_app(script_info=None):
 
     HomeUrlRegister.register()
     StepsUrlRegister.register()
+    ClaimUrlRegister.register()
 
     app.register_blueprint(home.views.home_blueprint)
     app.register_blueprint(steps.views.steps_blueprint)
+    app.register_blueprint(claim.views.claim_blueprint)
 
     app.debug = False
     toolbar = DebugToolbarExtension()

@@ -1,0 +1,13 @@
+{
+    "libs": [
+        "browser",
+        "jquery"
+    ],
+    "loadEagerly": [
+        "sweext_web/static/plugin/layui/layui.all.js",
+        "sweext_web/static/js/main.js",
+        "sweext_web/static/js/layui_modules/base.js"
+    ],
+    "plugin": {}
+}
+

@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='/css/claim.css') }} ">
+{% endblock %}
+
+{% block content %}
+<script id="claim-area-tpl" type="text/html">
+
+</script>
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+
+<script>
+    layui.use('claim')
+</script>
+
+{% endblock %}

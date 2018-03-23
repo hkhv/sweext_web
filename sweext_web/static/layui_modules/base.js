@@ -3,8 +3,9 @@ layui.define(['jquery', 'layer'], function(exports) {
         layer = layui.layer
 
     var web_config = {
-        api_addr: 'https://api.sweet.ext.xin' 
+        api_addr: 'http://47.52.16.229:29000'
     }
+
 
     var utils = {
         apigen: function(path) {
@@ -51,7 +52,7 @@ layui.define(['jquery', 'layer'], function(exports) {
             if (agent.indexOf('mac') >= 0 || agent.indexOf('iphone') >= 0 || agent.indexOf('ipad') >= 0) {
                 window.getSelection().addRange(range) 
             } else {
-                copyDOM.select();
+                copyDOM.select()
             }
 
             // copy 
@@ -66,6 +67,24 @@ layui.define(['jquery', 'layer'], function(exports) {
 
             // remove checked element 
             window.getSelection().removeAllRanges()
+        },
+
+        encodeBase64: function(str) {
+            if (Base64.extendString) {
+                Base64.extendString()
+                code = encodeURIComponent(str).toBase64()
+                return code
+            }
+            return null
+        },
+
+        decodeBase64: function(str) {
+            if (Base64.extendString) {
+                Base64.extendString()
+                text = decodeURIComponent(str.fromBase64())
+                return text
+            }
+            return null
         }
     }
 
