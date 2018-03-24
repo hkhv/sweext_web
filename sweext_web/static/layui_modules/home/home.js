@@ -12,22 +12,23 @@ layui.define(['laytpl', 'base', 'home_http'], function(exports) {
     }
 
     settings = JSON.parse(localStorage.getItem('settings'))
-    
+
     init_input_area(settings.input_content_tip)
 
     // }
-    
+
     // **** init buttons **** {
-    
+
     $('#sweform').on('submit', function(e) {
         e.preventDefault()
-
+        buttonChange($(this).find('button'), false)
         var input_content = $('#input-content').val().trim()
         if (input_content == '') {
             layer.msg('fill the input box please')
+            buttonChange($(this).find('button'), true)
             return false
         }
-        
+
         var settings = localStorage.getItem('settings')
 
         if (settings == null) {
@@ -46,7 +47,7 @@ layui.define(['laytpl', 'base', 'home_http'], function(exports) {
             team_id: team_id,
             settings_id: settings_id,
             input_content: input_content
-        } 
+        }
 
         if (from_code != null && from_code != '') {
             data.from_code = from_code
@@ -58,7 +59,18 @@ layui.define(['laytpl', 'base', 'home_http'], function(exports) {
         })
     })
 
-    // } 
-    
+    // }
+    function buttonChange(obj, flag) {
+        if(flag == false) {
+            $(obj).text('Please Wait...')
+            $(obj).prop('disabled', true)
+            $(obj).addClass('layui-btn-disabled')
+        }
+       else {
+            $(obj).text('SUBMIT')
+            $(obj).prop('disabled', false)
+            $(obj).removeClass('layui-btn-disabled')
+       }
+    }
     exports('home', {})
 })

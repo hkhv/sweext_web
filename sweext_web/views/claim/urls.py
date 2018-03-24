@@ -6,6 +6,6 @@ class ClaimUrlRegister(UrlRegister):
     def views_register():
         claim_view = ClaimView.as_view('claim_view', template_name='claim/claim.html')
 
-        claim_blueprint.add_url_rule('/<string:symbol>/claim/<string:session>',
+        claim_blueprint.add_url_rule('/<string:symbol>/claim',
                                      view_func=claim_view,
                                      methods=['GET', ])

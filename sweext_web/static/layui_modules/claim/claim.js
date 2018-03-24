@@ -12,6 +12,7 @@ layui.define(['base', 'layer', 'laytpl', 'claim_http'], function(exports) {
 
     storage = window.localStorage
 
+
     console.info(base.decodeBase64('5aaI5Liq6bih'))
 
     exports('claim', {})

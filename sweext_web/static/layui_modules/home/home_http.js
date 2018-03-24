@@ -20,8 +20,11 @@ layui.define(['layer', 'jquery', 'base'], function(exports) {
             $.ajax({
                 type: 'post',
                 url: base.apigen('/steps/code'),
-                data: data, 
+                data: data,
                 success: function(response) {
+                    $('#sweform button').text('SUBMIT')
+                    $('#sweform button').prop('disabled', false)
+                    $('#sweform button').removeClass('layui-btn-disabled')
                     base.http_handler(response, callback, exception)
                 }
             })

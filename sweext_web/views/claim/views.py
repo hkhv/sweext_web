@@ -5,5 +5,5 @@ claim_blueprint = Blueprint('claim_blueprint', __name__)
 
 
 class ClaimView(CoreView):
-    def dispatch_request(self, symbol, session):
+    def dispatch_request(self, symbol):
         return render_template(self._template_name)

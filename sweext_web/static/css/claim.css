@@ -1,0 +1,15 @@
+.help table {
+    table-layout:fixed;
+    width: 80%;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.help table tbody tr td:nth-child(1) {
+    width: 50px;
+}
+.help table td {
+    word-break: break-all;
+    vertical-align: top;
+    padding-bottom: 20px;
+}
